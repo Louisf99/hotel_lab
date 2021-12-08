@@ -14,12 +14,12 @@ const BookingsItem = ({booking, removeBooking}) => {
             removeBooking(booking._id);
         })
     }
+
     return (
         <>
-            <h1>Guest Name: {booking.name}</h1>
+            <p>Guest Name: {booking.name}</p>
             <p>Email: {booking.email}</p>
-            <p>Status {booking.checkedin}</p>
-   
+            <p>Checked in: {booking.checkedin}</p>
             <button onClick={handleDelete}> 🗑 </button>
             <hr></hr>
         </>

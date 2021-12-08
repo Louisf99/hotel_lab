@@ -29,11 +29,10 @@ const BookingsForm = ({ addBooking }) => {
                 <label htmlFor="email">Email:</label>
                 <input onChange={onChange} type="text" id="email" />
             </div>
-            <div>
-                <input type="button" id="status" name="status" value="true" checked />
-                <label for="checked-in">Checked in</label>
+            <div className="formWrap">
+                <label htmlFor="checkedin">Checked in:</label>
+                <input onChange={onChange} type="boolean" id="checkedin" />
             </div>
-
             <input type="submit" value="Save" id="save" />
         </form>
 
